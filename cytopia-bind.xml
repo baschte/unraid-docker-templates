@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>cytopia-bind</Name>
+    <Registry>https://hub.docker.com/r/cytopia/bind</Registry>
+    <Repository>cytopia/bind:latest</Repository>
+    <Github>https://github.com/cytopia/docker-bind</Github>
+    <Network>host</Network>
+    <MyIP/>
+    <Privileged>false</Privileged>
+    <Support>https://github.com/cytopia/docker-bind</Support>
+    <Project/>
+    <Overview>
+        Bind (bind9) caching DNS server on Alpine or Debian with wild-card domain support [multi-arch]
+    </Overview>
+    <Category>HomeAutomation:</Category>
+    <WebUI/>
+    <TemplateURL/>
+    <Icon>https://raw.githubusercontent.com/testdasi/simple-dns-doh/master/DNS-icon.png</Icon>
+    <ExtraParams/>
+    <PostArgs/>
+    <DateInstalled>1683637266</DateInstalled>
+    <DonateText/>
+    <DonateLink/>
+    <DonateImg/>
+    <MinVer/>
+    <Description>Bind (bind9) caching DNS server on Alpine or Debian with wild-card domain support [multi-arch]</Description>
+    <Networking>
+        <Mode>host</Mode>
+        <Publish>
+            <Port>
+                <HostPort>53</HostPort>
+                <ContainerPort>53</ContainerPort>
+                <Protocol>tcp</Protocol>
+            </Port>
+            <Port>
+                <HostPort>53</HostPort>
+                <ContainerPort>53</ContainerPort>
+                <Protocol>udp</Protocol>
+            </Port>
+        </Publish>
+    </Networking>
+    <Environment/>
+    <Labels/>
+    <Config Name="DNS TCP Port" Target="53" Default="53" Mode="tcp" Description="DNS Listening TCP Port, this is used for dns queries" Type="Port" Display="always" Required="true" Mask="false">53</Config>
+    <Config Name="DNS UDP Port" Target="53" Default="53" Mode="udp" Description="DNS Listening UDP Port, this is used for dns queries" Type="Port" Display="always" Required="true" Mask="false">53</Config>
+    <Config Name="DNS Records" Target="DNS_A" Default="" Description="example: domain.com=127.0.0.1,..." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+    <Config Name="DNS Forwarder" Target="DNS_FORWARDER" Default="" Description="example: 127.0.0.1" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+</Container>
