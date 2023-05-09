@@ -12,10 +12,10 @@
     <Overview>
         Bind (bind9) caching DNS server on Alpine or Debian with wild-card domain support [multi-arch]
     </Overview>
-    <Category>HomeAutomation:</Category>
+    <Category>Network:DNS Status:Stable</Category>
     <WebUI/>
     <TemplateURL/>
-    <Icon>https://raw.githubusercontent.com/testdasi/simple-dns-doh/master/DNS-icon.png</Icon>
+    <Icon>https://raw.githubusercontent.com/baschte/unraid-docker-templates/main/images/DNS-icon.png</Icon>
     <ExtraParams/>
     <PostArgs/>
     <DateInstalled>1683637266</DateInstalled>
